@@ -1,2 +1,3 @@
 # SQL
-SQL question solving practice 
+Hi I'm Nandini Bhargava 
+I'm solving hacker rank SQL promblems 
