@@ -2,7 +2,7 @@ Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from 
 table: STATION(ID number ,city varchar2(21),state varchar2(2),LAT_N number, LONG_W number)
 
 what we want: - non duplicate city names -the first charater of city should be either a,e,i,o,u
-HINT: -problem is to find patterns we use wildcards (%,_) while using LIKE - we use OR as there are multiple values possible for a single charater
+HINT: -problem is to find patterns we use wildcards (%,_) while using LIKE - pair OR/AND with LIKE
 
 
 
