@@ -1,0 +1,29 @@
+Consider  P1(A,B) and P2(C,D) to be two points on a 2D plane.
+•	A happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+•	B happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+•	 C happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+•	 D happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+•	Query the Manhattan Distance between points  P1and P2 and round it to a scale of  4 decimal places.
+
+TABLE: STATION(ID number ,city varchar2(21),state varchar2(2),LAT_N number, LONG_W number)
+
+Maths logic: A(x1,y1),B(x2,y2) 
+Manhattan distance = |x1-x2| + |y1-y2| 
+absolute diffrence of x coordinates sum absolute diffrence of y coordinates 
+
+
+AGGREGATE FUNCTION THAT WE USE : ABS()
+
+SOLUTION:
+select round((abs(min(LAT_N)-MAX(LAT_N)) +abs(min(LONG_W)-max(LONG_W))),4) Manhattan_distance from STATION
+
+
+
+
+
+
+
+
+
+SOLUTION:
+select round((abs(min(LAT_N)-MAX(LAT_N)) +abs(min(LONG_W)-max(LONG_W))),4) Manhattan_distance from STATION
