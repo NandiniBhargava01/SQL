@@ -1,0 +1,7 @@
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+TABLE: STATION(ID number ,city varchar2(21),state varchar2(2),LAT_N number, LONG_W number)
+
+WHAT WE WANT: -non duplicate values of city -the name either NOT start with a vowel OR does NOT end with vowels(a,e,i,o,u) 
+
+SOLUTION:
+select distinct city from station where RIGHT(city,1) not in ('a','e','i','o','u') OR LEFT(city,1) not in ('a','e','i','o','u')
